@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Nexa Bold', cursive;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    height: 100vh;
+    background-image: url("/src/background.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.blur {
+    background-color: #ffffff10;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    max-width: 500px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.profile > img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 80%;;
+}
+
+.profile > p {
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: 5px;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 30px;
+    text-shadow: black 1px 1px 1px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+
+.link > button {
+    border-radius: 4px;
+    background-color: white;
+    border: black 2px solid;
+    color: black;
+    text-align: center;
+    font-size: 28px;
+    padding: 15px;
+    width: 335px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    align-items: center;
+
+}
+
+.link > button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.link > button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.link > button:hover span {
+    padding-right: 25px;
+}
+
+.link > button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.link > button:hover {
+    background-color: lightskyblue;
+}
+
+.link > button a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer > i {
+    color: white;
+    font-size: 20px;
+    text-shadow: black 1px 1px 1px;
+}
